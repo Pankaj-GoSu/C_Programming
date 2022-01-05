@@ -1,0 +1,13 @@
+
+# C is the lowest level portable language thats why OS and 
+many things written in C
+# We can reach machine code
+# Below C we have assembly language like for MC 8051.
+# Compiler converts the instructions set to machine code so that CPU understand.
+# Here We Use MinGW Compiler
+
+"""
+Interpreter translates just one statement of the program at a 
+time into machine code. Compiler scans the entire program and 
+translates the whole of it into machine code at once.
+"""

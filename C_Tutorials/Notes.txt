@@ -1,0 +1,5 @@
+; ==> It is used for terminate a statement
+Keywords - reserved words in C programming There are 32 general Keywords
+# Identifiers any name which you want to give any variable or function.
+# C is Case sensitive language
+# C program made up of ==> keyword ,Identifiers ,string literals,symbol,constant.
