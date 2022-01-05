@@ -3,3 +3,5 @@ Keywords - reserved words in C programming There are 32 general Keywords
 # Identifiers any name which you want to give any variable or function.
 # C is Case sensitive language
 # C program made up of ==> keyword ,Identifiers ,string literals,symbol,constant.
+# In C programming language, scanf() function is used to read character,
+ string, numeric data from keyboard
