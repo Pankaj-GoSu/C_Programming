@@ -42,7 +42,7 @@ int main()
 // Quiz :
 
 #include <stdio.h>
-
+#include <conio.h>
 int main()
 {
     char sub[10];
