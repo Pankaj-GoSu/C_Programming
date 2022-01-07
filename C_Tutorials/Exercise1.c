@@ -1,6 +1,8 @@
 /*
 Print a multiplication table of a number entered by the user in pretty form
 */
+
+/*
 #include <stdio.h>
 
 int main()
@@ -20,5 +22,30 @@ int main()
      printf("%d X 9 =%d \n",a,a*9);
      printf("%d X 10 %d\n",a,a*10);
 
+    return 0;
+}
+
+*/
+
+// ======= Multiplication Table using function ========
+
+#include <stdio.h>
+
+void multiplication(int a)
+{
+    int i =0;
+    while (i<10)
+    { 
+        i = i + 1 ;
+        printf("%d X %d = %d\n",a,i,a*i);
+    }
+}
+
+int main()
+{
+    int x ;
+    printf("Enter a number whose multiplication table you want : \n");
+    scanf("%d",&x);
+    multiplication(x);
     return 0;
 }
