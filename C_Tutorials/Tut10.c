@@ -50,16 +50,16 @@ int main()
     printf("Which subject you passed ! only Math Type -> Math , Only Science Type -> Science Or type Both \n") ;
     scanf("%s",&sub);
     printf("Enter string %s \n",sub);
-    char a[10] = "Math";
-    char b[10] = "Science";
-    char c[10] = "Both";
-    if (sub == a){
+    // char a[10] = "Math";
+    // char b[10] = "Science";
+    // char c[10] = "Both";
+    if (sub == "Math"){
         printf("Giving 15 Rs for Math\n");
     }
-    else if (sub == b){
+    else if (sub == "Science"){
         printf("Giving 15 rs for Science\n");
     }
-    else if (sub == c){
+    else if (sub == "Both"){
         printf("Giving 45 rs for Passing Math and Science Both\n");
     }
     else {
