@@ -43,17 +43,18 @@ int main()
 
 #include <stdio.h>
 #include <conio.h>
+#include <string.h>
 int main()
 {
     char sub[10];
     
     printf("Which subject you passed ! only Math Type -> Math , Only Science Type -> Science Or type Both \n") ;
-    scanf("%s",&sub);
+    gets(sub); 
     printf("Enter string %s \n",sub);
-    // char a[10] = "Math";
+    char a[10] = "Math";
     // char b[10] = "Science";
     // char c[10] = "Both";
-    if (sub == "Math"){
+    if (!strcmp(sub,a)){
         printf("Giving 15 Rs for Math\n");
     }
     else if (sub == "Science"){

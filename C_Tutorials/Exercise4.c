@@ -17,7 +17,7 @@ int reversed_triangular_pattern();
 
 int main(){
     int inp;
-    printf("choose 0 for triangular star pattern and 1 for reversed triangular star pattern Then print the pattern accordingly.\n");
+    printf("choose 0 for triangular star pattern and 1 for reversed triangular star pattern .\n");
     scanf("%d",&inp);
     if (inp == 0){
         triangular_pattern();
