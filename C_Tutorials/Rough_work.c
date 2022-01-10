@@ -26,15 +26,38 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+// #include <string.h>
+
+// int main(){
+//     int arr[] ={4,5,6,7,8};
+//     int len;
+//     len = sizeof(arr)/sizeof(arr[0]);
+//     printf("Size of array : %d\n",sizeof(arr));
+//     printf("Size of one element : %d\n", sizeof(arr[0]));
+//     printf("Length of arr is : %d",len);
+
+// }
+
 #include <stdio.h>
 #include <string.h>
 
-int main(){
-    int arr[] ={4,5,6,7,8};
-    int len;
-    len = sizeof(arr)/sizeof(arr[0]);
-    printf("Size of array : %d\n",sizeof(arr));
-    printf("Size of one element : %d\n", sizeof(arr[0]));
-    printf("Length of arr is : %d",len);
+int main()
+{
+    char a;
+    printf("Enter a char :\n");
+    scanf("%c",&a);
+    switch(a)
+    {
+        case 'a':
+        printf("Hello");
+        break;
+        case 'b':
+        printf("Hi");
+        break;
+        default :
+            break;
 
+    }
+   
 }
