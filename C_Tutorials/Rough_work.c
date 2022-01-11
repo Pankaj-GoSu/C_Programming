@@ -39,25 +39,72 @@
 
 // }
 
+// #include <stdio.h>
+// #include <string.h>
+
+// int main()
+// {
+//     char a;
+//     printf("Enter a char :\n");
+//     scanf("%c",&a);
+//     switch(a)
+//     {
+//         case 'a':
+//         printf("Hello");
+//         break;
+//         case 'b':
+//         printf("Hi");
+//         break;
+//         default :
+//             break;
+
+//     }
+   
+// }
+
+/*
+Author : Pankaj Goswami
+Purpose : Exercise 6
+Date : 10/01/2022
+*/
+
+/*
+parsing the String
+*/
+
 #include <stdio.h>
 #include <string.h>
 
+int len ;
+
+void parser(char str[])
+{
+    int arr[20];
+    int j = 0;
+    int len1 ;
+    for(int i = 0 ; i<len; i++){
+        if (str[i] == ' ' ){
+            arr[j] = i;      
+            j++;
+            len1 = j;
+            printf("after %d , %d\n",j,len1);
+
+        }
+    }
+    
+    for(int j = 0; j<len1;j++){
+        printf("%d\n",arr[j]);
+    }
+    for (int k = arr[0]; k < arr[len1-1] ;k++){
+        printf("%c",str[k]);
+    }
+}
+
 int main()
 {
-    char a;
-    printf("Enter a char :\n");
-    scanf("%c",&a);
-    switch(a)
-    {
-        case 'a':
-        printf("Hello");
-        break;
-        case 'b':
-        printf("Hi");
-        break;
-        default :
-            break;
-
-    }
-   
+    char string[] ="<span/> this is a heading2 </span>";
+    len = sizeof(string)/sizeof(string[0]);
+    printf("%d \n",len);
+    parser(string);
+    return 0;
 }
