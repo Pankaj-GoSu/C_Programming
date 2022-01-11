@@ -81,7 +81,7 @@ int main()
     ptr = (int*) malloc(n*sizeof(int)); // here we make array of size 3. and give address of first to pointer ptr.
     // ptr ==> is a Dynamically allocated array.
     for(int i = 0; i < n;i++){
-        printf("Entr The value no %d of thus array \n",i);
+        printf("Enter The value no %d of this array \n",i);
         scanf("%d",&ptr[i]); // ptr[i] = *(ptr + i) ==> both are same thing. 
         
     }
