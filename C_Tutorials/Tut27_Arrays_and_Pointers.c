@@ -67,11 +67,12 @@ int main(){
     printf("The address of first element of Array is : %d \n",&arr[0]);
     printf("The address of second element of Array is : %d \n",&arr[1]);
     printf("The address of first element of Array is : %d \n",arr);
-    printf("The address of second element of Array is : %d \n",arr + 1); // So it means arr work as pointer of array arr[10].
+    printf("The address of second element of Array is : %d \n",arr + 1); // So it means arr work as pointer of array arr[1].
     
     printf("The address of third element of Array is : %d \n",&arr[2]);
     printf("The address of third element of Array is : %d \n",arr + 2);
     //arr++ ; // this line will throw an error bcoz it is a constant.
+    //arrptr++ We can do this .
 
     printf("The Value at address of first element of Array is : %d \n",*(&arr[0]));
     printf("The Value at address of second element of Array is : %d \n",*(&arr[1]));
