@@ -36,6 +36,11 @@ during taking input displaying output to the user .
 
 */
 
+/*
+//Space before %c removes any white space (blanks, tabs, or newlines). 
+//It means %c without space will read white space like new line(\n), spaces(' ') or tabs(\t). 
+//By adding space before %c, we are skipping this and reading only the char given.
+*/
 #include <stdio.h>
 #define PI 3.14
 int main()
