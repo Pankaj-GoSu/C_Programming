@@ -16,7 +16,7 @@ Ans : A void is a pointer that has no data type associated with it.
 
 ==== >>>
 1- It is not possible to derefernce void pointer. // bcoz we do not have data type 
-2- Pointer arithmetic is not allowedd in C standards with void pointers. // bcoz we do not have data type 
+2- Pointer arithmetic is not allowed in C standards with void pointers. // bcoz we do not have data type 
 
 
 */
