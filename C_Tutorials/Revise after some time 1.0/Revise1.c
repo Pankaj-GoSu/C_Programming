@@ -145,6 +145,7 @@ int main()
 // Loop in C.
 
 
+/*
 #include <stdio.h>
 
 int main()
@@ -165,6 +166,108 @@ int main()
         num += 1;
     }
     while(num<100);
+    
+    return 0;
+}
+
+*/
+
+/*
+// Functions in C.
+
+#include <stdio.h>
+
+int sum(int a , int b)
+{
+    return a + b;
+}
+int main(void)
+{
+    printf("Sum is : %d ", sum(5,7));
+    return 0;
+}
+*/
+
+/*
+
+// Array :
+
+#include <stdio.h>
+
+int main()
+{
+    // int arr[10] = {1,2,3,4,5,6,7,8,9,0};
+    int arr[4];
+    printf("Enter the values for array\n");
+    for(int i = 0; i<4 ; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("%d",arr[3]);
+    return 0;
+}
+*/
+
+/*
+
+// Pointers in C.
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 98;
+    printf("%d\n",a);
+    int* ptr = NULL; // Pointer is a data type which store address of another variable
+    ptr = &a;
+    printf("%d and %d\n",ptr,&a);
+    *ptr = 97; // dereferncing ptr.
+    printf("%d\n",a);
+    return 0;
+
+}
+
+*/
+
+
+/*
+// Strings
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char name[3] = {'m','y','\0'};
+    char str1[50],str2[60];
+    strcpy(str1,"Pankaj"); // copy name to str1
+    strcpy(str2," Goswami");
+    strcat(str1,str2);
+    printf("%s",str1);
+    return 0;
+}
+
+*/
+
+// Structures in C.
+
+#include <stdio.h>
+#include <string.h>
+struct Books // structure is collection of data types .
+{
+char name[50];
+char author[50];
+int price;
+
+};
+
+int main()
+{
+    struct Books bk1 , bk2;
+    strcpy(bk1.name,"C Programming");
+    printf("%s\n",bk1.name);
+    bk1.price = 65;
+    printf("%d",bk1.price);
     
     return 0;
 }
