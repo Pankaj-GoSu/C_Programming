@@ -8,14 +8,15 @@ int main(){ // function
 
 */
 
+/*
 #include <stdio.h>
 
 int main()
 {
-    /*
-    Data Type:
-    int , float , char
-    */
+
+    // Data Type:
+    // int , float , char
+    
 
    // Here Memory Is RAM
  
@@ -32,5 +33,138 @@ int main()
     printf("The Size taken by  unsigned int is %d \n", sizeof(unsigned int));
     printf("Value of a is %d and b is %.1f and Character is %c and string is %s\n",a,b,c,d);
     const int i = 9;
+    return 0;
+}
+
+*/
+
+/*
+
+#include <stdio.h>
+
+int main()
+{
+    // int pankajInput;
+    // printf("Please enter the value of pankajInput \n");
+    // scanf("%d",&pankajInput);
+    // printf("You entered %0.1f\n",(float)pankajInput);
+    int a , b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("a/b is : %f",(float)a/b);
+    return 0;
+}
+*/
+
+// If statement
+
+/*
+#include <stdio.h>
+
+int main()
+{
+    int age;
+    
+    while(1)
+    {
+    char c;
+    printf("****Welcome to this function you want to ***** \n\n If you want to continue press c for exit press e \n");
+    scanf("%c",&c);
+    if(c == 'c')
+    {
+    printf("Enter Your Age :\n");
+    scanf("%d",&age);
+    
+    if(age<18)
+    {
+        printf("You can not drive");
+    }
+    else if( age >18)
+    {
+        printf("You can drive");
+    }
+    else{
+        printf("You are 18 so from next year you can drive");
+    }
+    }
+    else if( c == 'e')
+    {
+        break;
+    }
+    else
+    {
+        printf("Please check your input and try again \n");
+        
+        continue;
+        
+        
+    }
+    }
+    return 0;
+}
+
+*/
+
+/*
+// Switch statement :
+#include <stdio.h>
+
+int main()
+{
+    int a = 5;
+    switch(a)
+    {
+        case 4 :
+        printf("It is not 5");
+        break;
+        case 5 :
+        printf("It is value 5");
+        break;
+        default :
+        printf("not 6");
+
+    }
+}
+*/
+
+/*
+// Conditional Statement :
+
+#include <stdio.h>
+
+int main()
+{
+    int age = 6;
+    int i4 = age>3?100:200; // short hand if else.
+    printf("%d",i4);
+    return 0;
+}
+*/
+
+
+// Loop in C.
+
+
+#include <stdio.h>
+
+int main()
+{
+    int num = 0;
+    // while(num<100)
+    // {
+    //     printf("%d\n",num+1);
+    //     num += 1;
+    // }
+    // for(int i = 0 ; i < 100; i++)
+    // {
+    //     printf("%d\n",i+1);
+    // }
+    do 
+    {
+        printf("%d \n",num +1);
+        num += 1;
+    }
+    while(num<100);
+    
     return 0;
 }
