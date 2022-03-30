@@ -40,7 +40,7 @@ area = PI *SQUARE (radius).
 
 #include <stdio.h>
 #define PI 3.14 // here we replacing PI with 3.14 means we can use PI in place of 3.14.
-#define SQUARE(r) r*r // using #define we can make macros whocha re faster then functions.
+#define SQUARE(r) r*r // using #define we can make macros which are faster then functions.
 int main()
 {
     float var = PI;

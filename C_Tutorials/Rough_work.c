@@ -129,33 +129,44 @@ parsing the String
 //     return 0;
 // }
 
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+
+// int main()
+// {
+//     char *ptr;
+//     int n;
+    
+//     printf("Please Enter size of your string \n");
+//     scanf("%d",&n);
+
+//     ptr = (char*) malloc(n*sizeof(char)); // here we have to enter value character by character
+
+//     for (int i = 0; i<n ; i++){
+//         printf("Please Enter %d character \n",i);
+//         scanf("%s",&ptr[i]);      
+//     }
+   
+//     printf("Name is : %s\n",ptr);
+//     // for (int i = 0; i<n ; i++){
+//     //     printf("Please Enter %d character \n",i);
+//     //     scanf("%s",&ptr[i]);      
+//     // }
+   
+//     // printf("Name is : %s\n",ptr);
+//     free(ptr);
+//     return 0;
+
+// }
+
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int main()
 {
-    char *ptr;
-    int n;
-    
-    printf("Please Enter size of your string \n");
-    scanf("%d",&n);
-
-    ptr = (char*) malloc(n*sizeof(char)); // here we have to enter value character by character
-
-    for (int i = 0; i<n ; i++){
-        printf("Please Enter %d character \n",i);
-        scanf("%s",&ptr[i]);      
-    }
-   
-    printf("Name is : %s\n",ptr);
-    // for (int i = 0; i<n ; i++){
-    //     printf("Please Enter %d character \n",i);
-    //     scanf("%s",&ptr[i]);      
-    // }
-   
-    // printf("Name is : %s\n",ptr);
-    free(ptr);
+    int a ;
+    printf("enter value of a\n");
+    scanf("%d",&a);
+    printf("Value of a is : %d",a);
     return 0;
-
 }
