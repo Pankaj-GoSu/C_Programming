@@ -57,12 +57,11 @@ int main()
     if (!strcmp(sub,a)){
         printf("Giving 15 Rs for Math\n");
     }
-    else if (sub == "Science"){
+    else if (sub == "Science" || sub == "Both"){
         printf("Giving 15 rs for Science\n");
     }
-    else if (sub == "Both"){
-        printf("Giving 45 rs for Passing Math and Science Both\n");
-    }
+    // else if (sub == "Both" ){
+    //     printf("Giving 45 rs for Passing Math and Science Both\n");  
     else {
         printf("Please Check Your input Run program again !\n");
     }

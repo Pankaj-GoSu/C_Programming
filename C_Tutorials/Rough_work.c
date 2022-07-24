@@ -159,7 +159,7 @@ parsing the String
 //     return 0;
 
 // }
-
+/*
 #include <stdio.h>
 
 int main()
@@ -169,4 +169,20 @@ int main()
     scanf("%d",&a);
     printf("Value of a is : %d",a);
     return 0;
+}
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+	FILE *f;
+	char c;
+	f=fopen("1.txt","r");
+	while((c=fgetc(f))!=EOF)
+	{
+		printf("%c",c);
+	}
+	fclose(f);
+	return 0;
 }

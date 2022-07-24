@@ -61,21 +61,25 @@ int main ()
 fclose(fptr);
     return 0;
 }
+
 */
 
 
-/*
 // fgets
 int main()
 {
     FILE *fptr = NULL;
     fptr = fopen("myfile.txt","r");
-    char str[34];
-    fgets(str,4,fptr);
-printf("The string is : %s \n",str);
+    char str[5];
+    char str1[100];
+   while(fgets(str,5,fptr))
+   {
+       printf("string is: %s",str);
+   }
+   return 0;
 }
-*/
 
+/*
 int main()
 {
     char c ;
@@ -85,3 +89,4 @@ int main()
     fputc('o',fptr);
     fputs("This is Pankaj",fptr);
 }
+*/
